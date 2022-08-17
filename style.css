@@ -1,0 +1,132 @@
+body{
+    font-family: sans-serif;
+    font-size: 20;
+    margin:0;
+    padding:0;
+    background-size: 200%;
+    background: green;
+    overflow: auto;
+    background-image: linear-gradient(white, grey);
+    background-image:url("Schnee.jpeg");
+    background-attachment: fixed;
+    
+    
+}
+.grid-box{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 7% 100%;
+    grid-template-areas: 
+    "header header header"
+    "table content sidebar"
+    ;
+}
+.header{
+    
+    grid-area: header;
+    font-size:18 ;
+}
+.header ul {
+    list-style-type: none;
+    margin-top: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: green;
+    width:100%;
+    position: fixed;
+  }
+  
+.header li {
+    float: left;
+    /*border-right: 1px solid white;*/
+  }
+  
+.header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.header li a:hover {
+    background-color: #111;    
+    box-shadow: 0px 8px 16px 0px black;
+}
+
+.table{
+    background-image: url("christmas-tree.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-attachment: relative;
+    grid-area: table;
+    
+}
+
+
+.table ul {
+    float: left;
+    list-style: none;
+    padding:0;
+    margin:5;
+    /*border: 1px solid white;*/
+    position: fixed;
+}
+.table li a {
+    display:block;
+    width: 180px;
+    background: green;
+    text-decoration: none;
+    text-align: center;
+    color:white;
+    padding:5;
+    /*border-bottom: 1px solid white;*/
+    
+}
+.table li a:hover {
+    background-color: #111;    
+    box-shadow: 0px 8px 16px 0px black;
+    height:1.5em;
+}
+li a.active{
+    color:white;
+    background-color:red;
+}
+.content{
+    padding:1.5vw;
+    grid-area: content;
+    background: lightgray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height:fit-content;
+    min-height: 100%;
+    
+    box-shadow: 0px 8px 16px 0px black;
+
+}
+.content hr {
+    margin-bottom: 2em;
+    padding:0;
+    border-top:2px solid red;
+}
+
+.content table, td {
+    border-spacing: 0;
+    border: 1px solid black;
+}
+.content td {
+    padding:10;
+    
+}
+
+.sidebar{
+    background-image: url("christmas-tree.png");
+    background-attachment: relative;
+    background-position: right ;
+    background-repeat: no-repeat;
+    grid-area: sidebar;
+}
+h1{
+    font-family:'Comic Sans MS'
+}
